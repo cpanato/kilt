@@ -32,7 +32,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Download kilt.zip
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: kilt.zip
           path: runtimes/cloudformation/kilt.zip
@@ -61,7 +61,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Download kilt.zip
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: kilt.zip
           path: runtimes/cloudformation/kilt.zip
@@ -100,12 +100,12 @@ jobs:
           draft: false
           prerelease: false
       - name: Download linux installer
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: kilt-cfn-installer-linux
           path: linux-installer/
       - name: Download macos installer
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: kilt-cfn-installer-macos
           path: macos-installer
